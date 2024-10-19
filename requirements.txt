@@ -1,0 +1,11 @@
+pypdf==5.0.1
+torch==2.5.0
+chromadb==0.5.15
+langchain==0.3.4
+streamlit==1.39.0
+transformers==4.45.2
+phonenumbers==8.13.47
+langchain-ollama==0.2.0
+langchain-community==0.3.3
+sentence-transformers==3.2.0
+langchain-huggingface==0.1.0
