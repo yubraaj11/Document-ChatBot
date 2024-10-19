@@ -42,7 +42,7 @@ Make sure you have the following installed:
 
     ```bash
     conda create -n documentchatbot python==3.10
-    conda activate documentchatbot  # On Windows use `venv\Scripts\activate`
+    conda activate documentchatbot  
     ```
 
 3. Install the required packages:
