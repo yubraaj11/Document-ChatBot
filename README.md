@@ -25,7 +25,7 @@ A Python-based chatbot that can assist users by answering questions about a give
 
 Make sure you have the following installed:
 
-- Python 3.8 or later
+- Python 3.10 
 - Pip (Python package manager)
 
 ### Installation
@@ -34,7 +34,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/document-chatbot.git
+    git clone git@github.com:yubraaj11/Document-ChatBot.git
     cd document-chatbot
     ```
 
@@ -63,7 +63,7 @@ streamlit run app.py
 ```
 DOCUMENT-CHATBOT/
 │   
-├── DB                # Streamlit application entry point
+├── DB               
 ├── src/ 
         DocumentChatbot.py
 ├── .gitignore
