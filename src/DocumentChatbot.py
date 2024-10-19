@@ -21,7 +21,7 @@ class DocumentChatbot:
         self.conversation_history = []
         self.vectorstore = None
         self.qa_chain = None
-
+        self.persist_directory = f"DB/chroma_{datetime.now()}"
         # Initialize embeddings with error handling
         try:
             self.embeddings = HuggingFaceEmbeddings(
@@ -48,6 +48,7 @@ class DocumentChatbot:
             if not os.path.exists(pdf_path):
                 raise FileNotFoundError(f"PDF file not found at: {pdf_path}")
             
+            # persist_directory = f"DB/chroma_{datetime.now()}"
             # Load PDF
             loader = PyPDFLoader(pdf_path)
             documents = loader.load()
@@ -66,7 +67,7 @@ class DocumentChatbot:
             self.vectorstore = Chroma.from_documents(
                 documents=docs,
                 embedding=self.embeddings,
-                persist_directory="DB",
+                persist_directory=self.persist_directory,
             )
             
             # Initialize the 'llama3.2:3b-instruct-q4_K_M' LLM using Ollama
