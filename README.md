@@ -72,3 +72,6 @@ DOCUMENT-CHATBOT/
 ├── LICENSE            
 └── README.md                   
 ```
+
+### Sample Streamlit App
+![image](https://github.com/user-attachments/assets/9cc1c36a-4b82-43c5-bd50-ca077e54e057)
