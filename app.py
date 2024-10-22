@@ -14,8 +14,7 @@ st.title("Document Chatbot")
 
 # File upload section
 uploaded_file = st.file_uploader("Upload a document", type=['pdf'])
-if uploaded_file:
-
+if uploaded_file:    
     # Create a temporary file to save the uploaded content
     with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
         # Write the uploaded file content to the temporary file
